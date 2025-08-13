@@ -1,0 +1,13 @@
+.profileImage {
+  border-radius: 50%; /* círculo */
+  object-fit: cover;  /* recorta para que no se deforme */
+  border: 2px solid #ccc; /* opcional, borde */
+  display: block;
+}
+
+.center{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+
