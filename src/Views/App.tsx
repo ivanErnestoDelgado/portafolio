@@ -9,7 +9,7 @@ type appProps={
 }
 
 export const App =({projects}:appProps) => {
-  const profileImagePath: string="/src/assets/images/profile.jpg" ;
+  const profileImagePath: string="/profile.jpg" ;
 
   const schoolData=[
     <DataRow data='Primaria' description='Niños Heroes de Chapultepec'/>,
