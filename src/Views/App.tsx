@@ -1,29 +1,10 @@
-import {ProfileImage} from './imageComponents/ProfileImage';
-import { DataRow } from "./textComponents/DataRow";
-import { TextContainer } from "./textComponents/TextContainer";
-import {  ProjectListContainer} from "./projectLinkComponents/ProjectListContainer";
-import { Project } from '../Models';
+import { PortfolioController } from "../Controllers/PortfolioController"
 
-type appProps={
-  projects:Project[];
-}
 
-export const App =({projects}:appProps) => {
-  const profileImagePath: string="/profile.jpg" ;
-
-  const schoolData=[
-    <DataRow data='Primaria' description='Niños Heroes de Chapultepec'/>,
-    <DataRow data='Secundaria' description='Colegio Topolobampo'/>,
-    <DataRow data='Preparatoria' description='CONALEP'/>,
-    <DataRow data='Universidad' description='Instituto tecnologico de Los Mochis'/>    
-  ]
-  
+export const App = () => {
   return (
-    <>
-      <ProfileImage imagePath={profileImagePath} alt='Iván Delgado' size={200}/>
-      <TextContainer textItems={schoolData}/>
-      <ProjectListContainer projectList={projects}/>      
-    </>
+    <div>
+      <PortfolioController.index/>
+    </div>
   )
 }
-
