@@ -1,9 +1,9 @@
-import { StrictMode } from 'react'
-import { createRoot } from 'react-dom/client'
-import { AppController } from './Controllers/appController.tsx'
+import { StrictMode } from 'react';
+import { createRoot } from 'react-dom/client';
+import { App } from './Views/App';
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
-    <AppController/>
+    <App/>
   </StrictMode>,
 )
