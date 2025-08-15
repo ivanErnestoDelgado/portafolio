@@ -1,3 +1,4 @@
+import style from "./textComponents.module.css";
 import type { JSX } from "react";
 
 type textContainerProps={
@@ -8,11 +9,11 @@ export const TextContainer= ({textItems}:textContainerProps) => {
     
     return(
         <div>
-            <hr />
+            <hr className={style.segmentationLine}/>
             <div>
                 {textItems}
             </div>
-            <hr />
+            <hr className={style.segmentationLine}/>
         </div>
     );
 }

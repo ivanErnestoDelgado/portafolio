@@ -12,8 +12,8 @@ export const Portfolio =({projects}:appProps) => {
   const schoolData=[
     <DataRow data='Primaria' description='Niños Heroes de Chapultepec'/>,
     <DataRow data='Secundaria' description='Colegio Topolobampo'/>,
-    <DataRow data='Preparatoria' description='CONALEP'/>,
-    <DataRow data='Universidad' description='Instituto tecnologico de Los Mochis'/>    
+    <DataRow data='Preparatoria' description='CONALEP (Profesional Técnico Bachiller en Informática)'/>,
+    <DataRow data='Universidad' description='Instituto Tecnologico de Los Mochis (Ingeniería Informática)'/>    
   ]
   
   return (
