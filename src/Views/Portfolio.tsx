@@ -1,8 +1,6 @@
-import {ProfileImage} from './components/imageComponents/ProfileImage';
-import { DataRow } from "./components/textComponents/DataRow";
-import { TextContainer } from "./components/textComponents/TextContainer";
-import {  ProjectListContainer} from "./components/projectLinkComponents/ProjectListContainer";
+import { DataRow,ProfileImage,ProjectListContainer,TextContainer } from "./components";
 import { Project } from '../Models';
+import style from "./portfolio.module.css";
 
 type appProps={
   projects:Project[];
@@ -20,9 +18,13 @@ export const Portfolio =({projects}:appProps) => {
   
   return (
     <>
+    <div className={style.Principal}>
+      <div className={style.PortfolioContainer}>
       <ProfileImage imagePath={profileImagePath} alt='Iván Delgado' size={200}/>
       <TextContainer textItems={schoolData}/>
-      <ProjectListContainer projectList={projects}/>      
+      <ProjectListContainer projectList={projects}/>
+      </div>
+    </div>      
     </>
   )
 }
