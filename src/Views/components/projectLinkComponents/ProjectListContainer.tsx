@@ -15,7 +15,7 @@ export const ProjectListContainer= ({projectList}:projectListContainerProps) => 
     
     return(
         <div>
-            <h4>Proyectos</h4>
+            <h4 className={style.projectListTitle}>Proyectos</h4>
             <div className={style.projectListContainer}>
             {
                 projectContainers

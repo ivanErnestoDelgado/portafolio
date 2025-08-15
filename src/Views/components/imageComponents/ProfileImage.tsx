@@ -11,8 +11,8 @@ export const ProfileImage=({imagePath, alt: name="Foto de perfil", size = 100}:p
     return (
      <div className={styles.center}>
         <img src={imagePath} className={styles.profileImage} style={{width:size, height: size}}/>
-        <div
-        ><h4 className={styles.center}>{name}</h4>
+        <div className={styles.name}>
+            <h4 className={styles.center}>{name}</h4>
         </div>
      </div>
 

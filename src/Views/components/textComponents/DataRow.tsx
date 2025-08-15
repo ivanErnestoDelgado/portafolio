@@ -1,3 +1,5 @@
+import style from "./textComponents.module.css";
+
 type DataProps={
     data: string,
     description:string
@@ -5,7 +7,7 @@ type DataProps={
 
 export const DataRow= ({data,description}:DataProps) => {
     return (
-        <div>
+        <div className={style.dataRow}>
             <h5><b>{data}</b>: {description}</h5>
         </div>
     );

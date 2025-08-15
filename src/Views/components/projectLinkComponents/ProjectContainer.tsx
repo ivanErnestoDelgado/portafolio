@@ -10,7 +10,7 @@ export const ProjectContainer=({projectTitle,projectDescription, url}:projectCon
     return (
         <a href={url} className={style.projectContainer}>
             <div className={style.projectTitleContainer} >
-                <h4>{projectTitle}</h4>
+                <h3>{projectTitle}</h3>
             </div>
             <div className={style.projectDescriptionContainer}>
                 <p>{projectDescription}</p>
