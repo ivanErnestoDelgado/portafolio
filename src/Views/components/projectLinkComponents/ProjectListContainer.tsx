@@ -1,5 +1,5 @@
 import style from './projectLink.module.css';
-import type { Project } from "../../Models";
+import type { Project } from "../../../Models";
 import { ProjectContainer } from './ProjectContainer';
 
 type projectListContainerProps={
